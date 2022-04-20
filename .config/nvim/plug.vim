@@ -4,6 +4,10 @@ endif
 
 call plug#begin()
 
+" Gruvbox theme
+Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
+
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
@@ -35,3 +39,6 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 call plug#end()
 
+
+"  Install from lua
+:lua require('plugins')

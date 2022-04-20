@@ -24,7 +24,7 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
-set shell=fish
+set shell=zsh
 set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
@@ -101,6 +101,8 @@ au BufNewFile,BufRead *.mdx set filetype=markdown
 au BufNewFile,BufRead *.flow set filetype=javascript
 " Fish
 au BufNewFile,BufRead *.fish set filetype=fish
+" Python
+au BufNewFile,BufRead *.py set filetype=python
 
 set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
@@ -139,9 +141,13 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  "  let g:neosolarized_termtrans=1
+  "  runtime ./colors/NeoSolarized.vim
+  "  colorscheme NeoSolarized
+  " Use gruvbox
+  colorscheme gruvbox
+  " Use papercolor
+  "  colorscheme PaperColor
 endif
 
 "}}}
