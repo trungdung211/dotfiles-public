@@ -144,10 +144,19 @@ if exists("&termguicolors") && exists("&winblend")
   "  let g:neosolarized_termtrans=1
   "  runtime ./colors/NeoSolarized.vim
   "  colorscheme NeoSolarized
+
   " Use gruvbox
   colorscheme gruvbox
+
   " Use papercolor
   "  colorscheme PaperColor
+  
+  " Use nord
+  "  colorscheme nord
+  "  let g:nord_italic_comments = 1
+  "  let g:nord_underline = 1
+  "  let g:nord_uniform_diff_background = 1
+  "  let g:nord_bold_vertical_split_line = 1
 endif
 
 "}}}

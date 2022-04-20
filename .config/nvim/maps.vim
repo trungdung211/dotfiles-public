@@ -73,3 +73,16 @@ nmap <C-w><down> <C-w>-
 " Switch window
 noremap <leader>= <C-w>w
 
+"------------------------------
+" Git
+
+nnoremap <leader>gh :Git<Space>log<Space>--oneline<Space>--graph<Space>--all<Space>--decorate<Enter>
+nnoremap <leader>gl :GlLog<Enter>
+
+"------------------------------
+" Git
+nnoremap ;jf :%!jq<Space>.<Enter>
+
+"------------------------------
+" Which key
+"  nnoremap <silent> <leader> :WhichKey '<Space>'<CR>

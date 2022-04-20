@@ -6,10 +6,13 @@ call plug#begin()
 
 " Gruvbox theme
 Plug 'morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
+"  Plug 'arcticicestudio/nord-vim'
+"  Plug 'shaunsingh/nord.nvim'
+"  Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+"  Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 if has("nvim")
   Plug 'hoob3rt/lualine.nvim'
