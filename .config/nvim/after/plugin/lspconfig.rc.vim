@@ -106,9 +106,15 @@ nvim_lsp.pyright.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  filetypes = { "go", "gomod", "gotmpl" },
+  capabilities = capabilities
+}
+
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
-  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc', 'python' },
+  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc', 'python', 'go', 'gomod', 'gotmpl' },
   init_options = {
     linters = {
       eslint = {
@@ -138,6 +144,7 @@ nvim_lsp.diagnosticls.setup {
       typescript = 'eslint',
       typescriptreact = 'eslint',
       python = 'flake8',
+      golang = 'golangci-lint',
     },
     formatters = {
       eslint_d = {
@@ -164,6 +171,8 @@ nvim_lsp.diagnosticls.setup {
       typescriptreact = 'prettier',
       json = 'prettier',
       python = 'autopep8',
+      go = 'gopls',
+      gomod = 'gopls',
     }
   }
 }

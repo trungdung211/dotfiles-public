@@ -15,6 +15,7 @@ set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
 set title
 set autoindent
+set smartindent
 set background=dark
 set nobackup
 set hlsearch
@@ -47,8 +48,8 @@ set ignorecase
 set smarttab
 " indents
 filetype plugin indent on
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 set nowrap "No Wrap lines
@@ -103,8 +104,11 @@ au BufNewFile,BufRead *.flow set filetype=javascript
 au BufNewFile,BufRead *.fish set filetype=fish
 " Python
 au BufNewFile,BufRead *.py set filetype=python
+" Golang
+au BufNewFile,BufRead *.go set filetype=go
+au BufNewFile,BufRead go.mod set filetype=gomod
 
-set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
+set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md,.go
 
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2

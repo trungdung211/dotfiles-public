@@ -25,6 +25,8 @@ require'nvim-treesitter.configs'.setup {
     "python",
     "http",
     "json",
+    "go",
+    "gomod",
   },
   autotag = {
     enable = true,

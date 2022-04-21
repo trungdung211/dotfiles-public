@@ -4,6 +4,7 @@ nnoremap <S-C-p> "0p
 " Delete without yank
 nnoremap <leader>d "_d
 nnoremap x "_x
+"  nnoremap ;ca :%y+<CR>
 
 " Increment/decrement
 nnoremap + <C-a>
@@ -11,6 +12,10 @@ nnoremap - <C-x>
 
 " Delete a word backwards
 nnoremap dw vb"_d
+
+" Indent/Outdent
+vnoremap <Tab> >>
+vnoremap <S-TAB> <<
 
 " Select all
 nmap <C-a> gg<S-v>G
@@ -89,9 +94,18 @@ nnoremap <leader>gh :Git<Space>log<Space>--oneline<Space>--graph<Space>--all<Spa
 nnoremap <leader>gl :GlLog<Enter>
 
 "------------------------------
-" Git
+" Json
 nnoremap ;jf :%!jq<Space>.<Enter>
 
 "------------------------------
 " Which key
 "  nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
+"------------------------------
+" NERDTree
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>rt :NERDTreeFind<CR>
+
+"------------------------------
+" LSP
+nnoremap <C-R>l :LspRestart<CR>
