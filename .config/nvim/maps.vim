@@ -74,6 +74,15 @@ nmap <C-w><down> <C-w>-
 noremap <leader>= <C-w>w
 
 "------------------------------
+" Buffers
+
+" Move buffer
+nnoremap <leader>[ :bp<Enter>
+nnoremap <leader>] :bn<Enter>
+nnoremap <leader>s[ :sbp<Enter>
+nnoremap <leader>s] :sbn<Enter>
+
+"------------------------------
 " Git
 
 nnoremap <leader>gh :Git<Space>log<Space>--oneline<Space>--graph<Space>--all<Space>--decorate<Enter>
