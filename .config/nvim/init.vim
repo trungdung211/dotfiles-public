@@ -59,6 +59,9 @@ set backspace=start,eol,indent
 set path+=**
 set wildignore+=*/node_modules/*
 
+" Set keybinding timeout
+set timeoutlen=400
+
 " Turn off paste mode when leaving insert
 autocmd InsertLeave * set nopaste
 
