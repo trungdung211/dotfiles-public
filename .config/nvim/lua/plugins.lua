@@ -22,6 +22,7 @@ vim.api.nvim_create_autocmd(
 
 -- Plugins via Packer
 return require("packer").startup {function(use)
+  use 'wbthomason/packer.nvim' -- Packer not remove it self when PackerUpdate/PackerSync
   use {
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },

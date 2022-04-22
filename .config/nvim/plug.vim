@@ -15,6 +15,7 @@ Plug 'tpope/vim-rhubarb'
 "  Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 if has("nvim")
+  Plug 'tpope/vim-repeat'
   Plug 'hoob3rt/lualine.nvim'
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
@@ -35,10 +36,14 @@ if has("nvim")
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-autopairs'
   Plug 'windwp/nvim-ts-autotag'
+  Plug 'folke/trouble.nvim'       " show language problem output
 
   " File browser with git indicators
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
+
+  " git
+  Plug 'lewis6991/gitsigns.nvim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

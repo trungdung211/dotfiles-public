@@ -7,3 +7,6 @@ endif
 
 cnoreabbrev g Git
 cnoreabbrev gopen GBrowse
+
+" Auto clean fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
