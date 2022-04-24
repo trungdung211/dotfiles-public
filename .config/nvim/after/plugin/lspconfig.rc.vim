@@ -112,9 +112,15 @@ nvim_lsp.gopls.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.sumneko_lua.setup{
+  on_attach = on_attach,
+  filetypes = { "lua" },
+  capabilities = capabilities
+}
+
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
-  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc', 'python', 'go', 'gomod', 'gotmpl' },
+  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc', 'python', 'go', 'gomod', 'gotmpl', 'lua' },
   init_options = {
     linters = {
       eslint = {
