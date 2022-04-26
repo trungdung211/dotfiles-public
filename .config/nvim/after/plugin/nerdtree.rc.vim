@@ -1,4 +1,3 @@
-echo("run")
 " file browser
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeMinimalUI = 1

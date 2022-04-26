@@ -27,7 +27,10 @@ return require("packer").startup {function(use)
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
+        local theme = require'alpha.themes.startify'.config
+        print('run here')
+        theme["layout"][2] = require'startingheader'.header
+        require'alpha'.setup(theme)
     end
   }
 
