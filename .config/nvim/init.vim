@@ -177,3 +177,10 @@ set exrc
 " vim: set foldmethod=marker foldlevel=0:
 
 runtime ./neovide.vim
+
+" rooter config
+let g:rooter_patterns = ['.git', 'Makefile', '*.sln', 'build/env.sh']
+
+
+" greeter
+:lua print("Happily ace your career, man!")

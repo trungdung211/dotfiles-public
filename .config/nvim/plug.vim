@@ -49,6 +49,9 @@ endif
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
+" Rooter
+Plug 'airblade/vim-rooter'
+
 call plug#end()
 
 
